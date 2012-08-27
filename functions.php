@@ -42,21 +42,20 @@
 	
 	function check_numbers($min, $max, $compare){
 		if($compare){
-			if(is_int($min) && is_int($max)){
+			if(is_int($min) && is_int($max))
 				if($min> $max){
 					echo "The minimum number cannot greater than maximum number.";
 					return false;
 				}
-				return true;
-			}
+			
 		}else{
-			if(is_int($min) && $min>= 0)
-				return true;
-			else{
-				echo "The entered is not a number.";
+			if(!is_int($min) || $min< 0){
+				echo "The entered is invalid or too small.";
 				return false;
 			}
 		}
+		
+		return true;
 	}
 	
 	function get_search_result(){
