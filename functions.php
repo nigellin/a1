@@ -62,7 +62,7 @@
 		return true;
 	}
 	
-	function get_search_result($_GET){
+	function get_search_result(){
 		
 	}
 ?>

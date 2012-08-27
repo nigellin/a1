@@ -64,8 +64,12 @@
 						</td>
 					</tr>
 					<tr>
-						<td>Cost range:</td>
-						<td>$<input type="text" name="cost_min"/>->$<input type="text" name="cost_max"/></td>
+						<td>Cost range: $</td>
+						<td>
+							<input type="text" name="cost_min"/>
+							->
+							<input type="text" name="cost_max"/>
+						</td>
 					</tr>
 					<tr>
 						<td></td>
