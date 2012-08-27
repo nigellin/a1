@@ -52,13 +52,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td></td>
+						<td>Minimum of in stock:</td>
 						<td>
 							<input type="text" name="instock"/>
 						</td>
 					</tr>
 					<tr>
-						<td></td>
+						<td>Minimum of ordered:</td>
 						<td>
 							<input type="text" name="ordered"/>
 						</td>
