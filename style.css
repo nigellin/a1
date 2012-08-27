@@ -1,0 +1,5 @@
+table#search_form_table tr td input{
+	width: 130px;
+	margin-left: 5px;
+	text-align: center;
+}
