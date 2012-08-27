@@ -46,7 +46,7 @@
 						<td>
 							<?php
 								print drop_down_list_num("year", "wine", "min");
-								print "&nbsp;->";
+								print "->";
 								print drop_down_list_num("year", "wine", "max");
 							?>
 						</td>
@@ -54,14 +54,18 @@
 					<tr>
 						<td>Minimum of in stock:</td>
 						<td>
-							<input type="text" name="instock"/>
+							<input type="text" name="instock_num"/>
 						</td>
 					</tr>
 					<tr>
 						<td>Minimum of ordered:</td>
 						<td>
-							<input type="text" name="ordered"/>
+							<input type="text" name="ordered_num"/>
 						</td>
+					</tr>
+					<tr>
+						<td>Cost range($):</td>
+						<td><input type="text" name="cost_min"/>-><input type="text" name="cost_max"/></td>
 					</tr>
 					<tr>
 						<td></td>
