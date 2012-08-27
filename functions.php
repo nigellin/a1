@@ -47,6 +47,10 @@
 					echo "The minimum number cannot greater than maximum number.";
 					return false;
 				}
+			else{
+				echo "The entered is invalid.";
+				return false;
+			}
 			
 		}else{
 			if(!is_int($min) || $min< 0){
@@ -58,7 +62,7 @@
 		return true;
 	}
 	
-	function get_search_result(){
+	function get_search_result($_GET){
 		
 	}
 ?>
