@@ -51,7 +51,18 @@
 							?>
 						</td>
 					</tr>
-					
+					<tr>
+						<td></td>
+						<td>
+							<input type="text" name="instock"/>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="text" name="ordered"/>
+						</td>
+					</tr>
 					<tr>
 						<td></td>
 						<td>
