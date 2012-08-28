@@ -3,12 +3,12 @@ table#search_table tr td:first-child{
 	width: 180px;
 }
 table#result_table tr:first-child td{
-	font: bold 18px "Times New Roman";
+	font: bold 16px "Times New Roman";
 	text-align: center;
 	text-decoration: underline;
 }
 table#result_table tr:nth-child(n+2) td{
-	font: 16px "Courier New";
+	font: 15px "Courier New";
 }
 table#result_table tr:nth-child(2n){
 	background: ghostwhite;

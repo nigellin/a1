@@ -4,13 +4,14 @@
 ?>
 <html>
 	<head>
-		<title></title>
+		<title>Search Result</title>
 		<link rel="stylesheet" href="style.css"/>
 	</head>
 	<body>
 		<div>
 			<?php
 				print get_search_result();
+				mysql_close();
 			?>
 		</div>
 	</body>
