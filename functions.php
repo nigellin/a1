@@ -71,7 +71,30 @@
 		$year_min= isset($_GET['year_min'])? $_GET['year_min']: "";
 		$instock_num= isset($_GET['instock_num'])? $_GET['instock_num']: "";
 		$ordered_num= isset($_GET['ordered_num'])? $_GET['ordered_num']: "";
-		$cost_min= isset($_GET['cost_min'])? $_GET['cost_min']: 0;
+		$cost_min= isset($_GET['cost_min'])? $_GET['cost_min']: "";
 		$cost_max= isset($_GET['cost_max'])? $_GET['cost_max']: "";
+		
+		$select= "wine_name, variety, year, winery_name, region_name, on_hand, cost";
+		$table_join= "wine JOIN wine_variety ON wine.wine_id= wine_variety.wine_id ".
+			"JOIN grape_variety ON wine_variety.variety_id= grape_variety.variety_id ".
+			"JOIN winery ON wine.winery_id= winery.winery_id ".
+			"JOIN region ON winery.region_id= region.region_id ".
+			"JOIN inventory ON wine.wine_id= inventory.wine_id";
+		
+		$condition= "year<= $year_max and year>= $year_min";
+		
+		$query= "SELECT $select FROM $table_join WHERE $condition ORDER BY variety, wine_name, winery_name DESC;";
+		
+		$exec_query= mysql_query($query) or print mysql_error();
+		
+		while($result= mysql_fetch_array($exec_query, MYSQL_ASSOC)){
+			$output.= "<tr>";
+			foreach($result as $value)
+				$output.="<td>$value</td>";
+			
+			$output.= "</tr>";
+		}
+		
+		return $output;
 	}
 ?>

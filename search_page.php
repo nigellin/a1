@@ -12,7 +12,7 @@
     <body>
 		<div>
 			<form name="search_form" method="get" autocomplete="off" action="search_result.php" class="search_form">
-				<table id="search_form_table">
+				<table id="search_table">
 					<tr>
 						<td>Wine Name:</td>
 						<td>
@@ -82,3 +82,6 @@
 		</div>
 	</body>
 </html>
+<?php
+	mysql_close();
+?>

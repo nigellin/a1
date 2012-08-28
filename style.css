@@ -1,5 +1,15 @@
-table#search_form_table tr td input{
-	width: 130px;
-	margin-left: 5px;
+table#search_table tr td:first-child{
+	font: 16px "Times New Roman";
+	width: 180px;
+}
+table#result_table tr:first-child td{
+	font: bold 18px "Times New Roman";
 	text-align: center;
+	text-decoration: underline;
+}
+table#result_table tr:nth-child(n+2) td{
+	font: 16px "Courier New";
+}
+table#result_table tr:nth-child(2n){
+	background: ghostwhite;
 }
