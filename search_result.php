@@ -6,7 +6,7 @@
 	<body>
 		<div>
 			<table>
-				<tr></tr>
+				
 			</table>
 		</div>
 	</body>

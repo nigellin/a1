@@ -63,6 +63,15 @@
 	}
 	
 	function get_search_result(){
-		
+		$wine_name= isset($_GET['wine_name'])? $_GET['wine_name']: "";
+		$winery_name= isset($_GET['winery_name'])? $_GET['winery_name']: "";
+		$region_id= isset($_GET['region_id'])? $_GET['region_id']: "";
+		$variety_id= isset($_GET['variety_id'])? $_GET['variety_id']: "";
+		$year_max= isset($_GET['year_max'])? $_GET['year_max']: "";
+		$year_min= isset($_GET['year_min'])? $_GET['year_min']: "";
+		$instock_num= isset($_GET['instock_num'])? $_GET['instock_num']: "";
+		$ordered_num= isset($_GET['ordered_num'])? $_GET['ordered_num']: "";
+		$cost_min= isset($_GET['cost_min'])? $_GET['cost_min']: 0;
+		$cost_max= isset($_GET['cost_max'])? $_GET['cost_max']: "";
 	}
 ?>
