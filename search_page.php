@@ -29,7 +29,7 @@
 						<td>Region:</td>
 						<td>
 							<?php
-								print drop_down_list_db("region_id", "region_name", "region");
+								print drop_down_list_db("region_name", "region");
 							?>
 						</td>
 					<tr/>
@@ -37,7 +37,7 @@
 						<td>Grape Variety:</td>
 						<td>
 							<?php
-								print drop_down_list_db("variety_id", "variety", "grape_variety")
+								print drop_down_list_db("variety", "grape_variety")
 							?>
 						</td>
 					</tr>
